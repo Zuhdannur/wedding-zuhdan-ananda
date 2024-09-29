@@ -20,7 +20,7 @@ export default function () {
                     linear-gradient(0deg, rgba(123, 76, 130, 0.5), rgba(123, 76, 130, 0.5)),
                     linear-gradient(360deg, rgba(123, 76, 130, 0) 0%, rgba(123, 76, 130, 0.5) 100%)`     }} />
 
-            <div className='mt-20 z-10 text-center animate-fadeInUp'>
+            <div data-aos="fade-up" className='mt-20 z-10 text-center animate-fadeInUp'>
                 <p className='text-white font-second text-sm' >THE WEDDING OF</p>
                 <h1 className="text-[28px] font-semibold text-white tracking-wide">ANANDA & ZUHDAN</h1>
                 <span className="text-sm text-white font-second">#ANewchapterwithZUhdan</span>
@@ -30,7 +30,7 @@ export default function () {
 
             <div className="relative z-40 flex flex-col items-center justify-center bottom-20">
                 <img src={Mouse} alt='mouse image' />
-                <span className='text-xs font-second text-white mt-1'>Scroll ke Bawah</span>
+                <span data-aos="fade-bottom" className='text-xs font-second text-white mt-1'>Scroll ke Bawah</span>
             </div>
 
         </div>

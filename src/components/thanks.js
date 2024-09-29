@@ -4,7 +4,7 @@ import Date from '../assets/images/Date.svg'
 
 function CreateButton({ text, onClick }) {
     return (
-        <button className='border-[1px] border-primary text-primary text-xs py-2 px-5 rounded-full' onClick={onClick}>
+        <button className='border-[1px] border-primary text-primary text-xs py-2 px-5 rounded-full hover:bg-primary hover:text-white' onClick={onClick}>
             {text}
         </button>
     )
@@ -16,10 +16,10 @@ export default function () {
 
         <div className="relative min-h-screen flex flex-col bg-white">
             <div className="bg-white relative z-30 flex flex-col items-center justify-center  animate-fadeInDown rounded-full min-h-screen mx-5">
-                <h1 className="text-[28px] font-semibold text-primary tracking-wide">Tanda Kasih</h1>
-                <span className='px-5 text-center font-second text-xs text-[#303341]'>Terima kasih telah menambah semangat kegembiraan pernikahan kami dengan kehadiran dan hadiah indah Anda.</span>
+                <h1 data-aos="zoom-in" className="text-[28px] font-semibold text-primary tracking-wide">Tanda Kasih</h1>
+                <span data-aos="zoom-in" className='px-5 text-center font-second text-xs text-[#303341]'>Terima kasih telah menambah semangat kegembiraan pernikahan kami dengan kehadiran dan hadiah indah Anda.</span>
 
-                <div className='flex justify-center items-center my-2'>
+                <div data-aos="zoom-in" className='flex justify-center items-center my-2 gap-1'>
                     <CreateButton text="Angpao Digital" onClick={(val) => {
 
                     }} />
@@ -27,13 +27,13 @@ export default function () {
 
                     }} />
                 </div>
-                <div className='flex justify-center items-center'>
+                <div data-aos="zoom-in" className='flex justify-center items-center'>
                     <CreateButton text="Kisah Perjalanan Cinta" onClick={(val) => {
 
                     }} />
 
                 </div>
-                <div className='flex justify-center items-center mt-2'>
+                <div data-aos="zoom-in" className='flex justify-center items-center mt-2'>
                     <CreateButton text="Wedding Filter" onClick={(val) => {
 
                     }} />

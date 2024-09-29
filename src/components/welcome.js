@@ -23,8 +23,8 @@ export default function ({ open }) {
 
             {/* Centered Logo and Name */}
             <div className="relative z-40 flex flex-col items-center justify-center top-32 animate-fadeInDown">
-                <img src={Logo} alt="zuhdan & anandan logo" className="mb-4" />
-                <h1 className="text-[28px] font-semibold text-primary tracking-wide">ANANDA & ZUHDAN</h1>
+                <img data-aos="fade-up" src={Logo} alt="zuhdan & anandan logo" className="mb-4" />
+                <h1 data-aos="fade-down" className="text-[28px] font-semibold text-primary tracking-wide">ANANDA & ZUHDAN</h1>
                 <span className="text-sm font-second">#ANewchapterwithZUhdan</span>
             </div>
 

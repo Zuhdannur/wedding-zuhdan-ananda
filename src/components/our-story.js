@@ -6,7 +6,7 @@ import OurStoryImg3 from '../assets/images/img-our-story-bottom-2.svg'
 
 function StorySection({ title, description, withTimeLine = true }) {
     return (
-        <div className='text-center'>
+        <div data-aos="zoom-out-up" className='text-center'>
             <p className='text-[20px] text-primary tracking-wide leading-[32px] mt-4 font-bold'>{title}</p>
             <span className='font-second font-[12px] leading-[18px] tracking-wide italic text-[#575B6A]'>“{description}”</span>
             {withTimeLine && <img className='mt-4' src={Connector} alt='connector' />}
@@ -27,10 +27,12 @@ export default function () {
             {/* Centered Logo and Name */}
             <div className="relative z-40 flex flex-col items-center justify-center top-16 animate-fadeInDown">
                 <img src={OurStoryImg1} alt="zuhdan & anandan logo" className="mb-4" />
-                <h1 className="text-[28px] font-semibold text-primary tracking-wide">Our Love Story</h1>
+                <h1 data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" className="text-[28px] font-semibold text-primary tracking-wide">Our Love Story</h1>
             </div>
 
-            <div className='relative z-40 flex flex-col items-center justify-center top-36 animate-fadeInDown'>
+            <div
+                className='relative z-40 flex flex-col items-center justify-center top-36 animate-fadeInDown px-5'>
                 <StorySection title="2018" description="Bertemu di sekoah SMP xxxx" />
                 <StorySection title="2018" description="Bertemu di sekoah SMP xxxx" />
                 <StorySection title="2018" description="Bertemu di sekoah SMP xxxx" />

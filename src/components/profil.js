@@ -13,7 +13,7 @@ import BottomBackground from '../assets/images/img-profil-bottom.svg'
 
 function PhotoArea({ nama, gender, father, mother, instagram, instagram_url }) {
     return (
-        <div className='text-center flex flex-col justify-center px-5'>
+        <div data-aos="zoom-in" className='text-center flex flex-col justify-center px-5'>
             <img src={ImgPhotoArea} alt='Photo Area' className='px-16' />
             <p className='text-[36px] text-primary font-bold'>{nama}</p>
             <span className='font-second text-[14px] font-medium mt-2'>{gender} Kedua dari <br />Bapak {father} dan <br /> {mother}</span>
@@ -21,7 +21,8 @@ function PhotoArea({ nama, gender, father, mother, instagram, instagram_url }) {
 
                 <a
                     href={instagram_url}
-                    className="flex items-center border-primary border-[1px] py-1 px-5 rounded-full text-primary"
+                    target='_blank'
+                    className="flex items-center border-primary border-[1px] py-1 px-5 rounded-full text-primary cursor-pointer" rel="noreferrer"
                 >
                     <img
                         src={IconInstagram}
@@ -48,15 +49,15 @@ export default function () {
 
             {/* Centered Logo and Name */}
             <div className="relative z-40 flex flex-col items-center justify-center top-16 animate-fadeInDown">
-                <img src={Bismillah} alt="bismillah" className="mb-4" />
-                <span className='px-5 text-center font-second text-xs text-[#303341]'>Maha Suci Allah yang telah menciptakan yang telah menciptakan makhluknya berpasang-pasangan.
+                <img data-aos="zoom-out-up" src={Bismillah} alt="bismillah" className="mb-4" />
+                <span data-aos="zoom-out-down" className='px-5 text-center font-second text-xs text-[#303341]'>Maha Suci Allah yang telah menciptakan yang telah menciptakan makhluknya berpasang-pasangan.
                     Ya Allah perkenankanlah pernikahan putra-putri kami:</span>
             </div>
 
             <div className='relative z-40 flex flex-col items-center justify-center top-28 animate-fadeInDown '>
-                <PhotoArea nama="Ananda Karina Muslimah, S.Pd." gender="Putri" father="Asep Rochman" mother="Aya Sofia Turan Bey" instagram="anandakrmn_" />
+                <PhotoArea nama="Ananda Karina Muslimah, S.Pd." gender="Putri" father="Asep Rochman" mother="Aya Sofia Turan Bey" instagram="anandakrnm_" instagram_url="https://www.instagram.com/anandakrnm_/" />
                 <img src={Separtor} alt='Sepaartor' className='w-full mt-6 mb-10' />
-                <PhotoArea nama="Zuhdan Nur Ihsan Iskandar S.Kom." gender="Putra" father="Rachmat Iskandar" mother="Sri Dinursanti" instagram="zuhdan_nur" />
+                <PhotoArea nama="Zuhdan Nur Ihsan Iskandar S.Kom." gender="Putra" father="Rachmat Iskandar" mother="Sri Dinursanti" instagram="zuhdan_nur" instagram_url="https://www.instagram.com/zuhdan_nur/" />
             </div>
 
             <img src={BottomBackground} className='w-full mt-[150px]' alt='background' />

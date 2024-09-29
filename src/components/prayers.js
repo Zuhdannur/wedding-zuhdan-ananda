@@ -23,7 +23,7 @@ export default function () {
                 <h1 className="text-[28px] font-semibold text-primary tracking-wide">Ucapan dan Do’a</h1>
                 <span className='px-5 text-center font-second text-xs text-[#303341] mt-1'>Kirim ucapan dan do’a untuk kedua mempelai:</span>
 
-                <button className='bg-primary py-2 px-8 text-white rounded-full mb-5 font-second mt-3'>
+                <button className='bg-primary py-2 px-8 text-white rounded-full mb-5 font-second mt-3 hover:bg-white hover:text-primary '>
                     Kirim Ucapan
                 </button>
 

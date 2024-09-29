@@ -1,8 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Welcome from "./components/welcome";
 import Invitation from "./pages/invitation";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function App() {
   const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+    });
+  }, []);
 
   return (
     <>
