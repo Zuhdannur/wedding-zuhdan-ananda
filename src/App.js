@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import Welcome from "./components/welcome";
+import Invitation from "./pages/invitation";
 function App() {
+  const [open, setOpen] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!open && <div className="min-h-screen bg-gray-100 flex justify-center">
+        <div className="w-full max-w-md bg-white">
+          <Welcome open={(val) => {
+            setOpen(val)
+          }} />
+
+        </div>
+      </div>}
+      {
+        open && <div className="bg-gray-100 flex justify-center">
+          <div className="w-full max-w-md bg-white">
+            <Invitation />
+          </div>
+        </div>
+      }
+    </>
+
   );
 }
 
