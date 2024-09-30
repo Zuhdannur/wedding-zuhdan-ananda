@@ -16,9 +16,9 @@ function StorySection({ title, description, withTimeLine = true }) {
 }
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default function () {
+export default function ({ section }) {
     return (
-        <div className="relative min-h-screen flex flex-col">
+        <div ref={section} className="relative min-h-screen flex flex-col">
             {/* Top Background Image */}
             <div className="absolute top-0 w-full h-full z-0">
                 <img src={bgTop} alt="background" className="w-full h-auto object-cover" />

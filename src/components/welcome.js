@@ -3,6 +3,8 @@ import bgTopLeft from '../assets/images/bg-top-left-01.svg'
 import bgBottomRight from '../assets/images/bg-bottom-right-01.png'
 import Logo from '../assets/images/Logo AZ.svg'
 import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { jwtDecode } from "jwt-decode";
 // eslint-disable-next-line import/no-anonymous-default-export
 
 function useQuery() {
@@ -13,6 +15,21 @@ function useQuery() {
 export default function ({ open }) {
     const params = useQuery();
     const code = params.get('invitation')
+    const [name, setName] = useState(null)
+    const [error, setError] = useState(false)
+
+    useEffect(() => {
+        if (code) {
+            try {
+                const decoded = jwtDecode(code);
+                setName(decoded.name);
+            } catch (e) {
+                setError(true);
+            }
+        } else {
+            setError(true)
+        }
+    }, [code])
 
     return (
         <div className="relative min-h-screen flex flex-col">
@@ -33,14 +50,21 @@ export default function ({ open }) {
 
             {/* Content at the Bottom of the Page */}
             <div className="relative z-40 flex flex-col items-center justify-center bottom-28 rounded-[24px] backdrop-blur-2xl mx-5 px-3 py-5 animate-fadeInUp">
-                <p className='font-second mb-2 text-[#303341]'>Kepada Bapak/Ibu/Saudara/i</p>
-                <h2 className='text-[28px] text-pink'>Rafli dan Pasangan {code} </h2>
-                <span className="text-sm text-center text-black my-5 font-second">Tanpa Mengurangi Rasa Hormat,Turut Mengundang untuk Dapat Hadir di Acara Pernikahan Kami.</span>
+                {!error && <>
+                    <p className='font-second mb-2 text-[#303341]'>Kepada Bapak/Ibu/Saudara/i</p>
+                    <h2 className='text-[28px] text-pink'>{name}</h2>
+                    <span className="text-sm text-center text-black my-5 font-second">Tanpa Mengurangi Rasa Hormat,Turut Mengundang untuk Dapat Hadir di Acara Pernikahan Kami.</span>
+                </>}
+
+                {error && <>
+                    <p className='font-second text-[#303341]'>Hallo, Terima Kasih Telah membukan Website ini</p>
+                    <span className="text-sm text-center text-black mb-5 font-second">Tanpa Mengurangi Rasa Hormat,Terima Kasih Telah Membuka Website Pernikahan Kami.</span>
+                </>}
 
                 <button onClick={() => {
-                    open(true)
+                    if (!error) open(true)
                 }} className='bg-primary py-2 px-8 text-white rounded-full mb-5 font-second'>
-                    Buka Undangan
+                    {error ? 'Asiik nikah' : 'Buka Undangan'}
                 </button>
             </div>
 

@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      {!open && <div className="min-h-screen bg-gray-100 flex justify-center">
+      {!open && <div className="min-h-screen bg-gray-100 flex justify-center overflow-x-hidden">
         <div className="w-full max-w-md bg-white">
           <Welcome open={(val) => {
             setOpen(val)
@@ -25,7 +25,7 @@ function App() {
         </div>
       </div>}
       {
-        open && <div className="bg-gray-100 flex justify-center">
+        open && <div className="bg-gray-100 flex justify-center overflow-x-hidden">
           <div className="w-full max-w-md bg-white">
             <Invitation />
           </div>

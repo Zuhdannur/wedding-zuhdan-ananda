@@ -2,6 +2,7 @@ import BottomFlowers from '../assets/images/bottom-flowers.svg'
 import Logo from '../assets/images/Logo AZ.svg'
 import Date from '../assets/images/Date.svg'
 
+
 function CreateButton({ text, onClick }) {
     return (
         <button className='border-[1px] border-primary text-primary text-xs py-2 px-5 rounded-full hover:bg-primary hover:text-white' onClick={onClick}>
@@ -11,7 +12,12 @@ function CreateButton({ text, onClick }) {
 }
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default function () {
+export default function ({ section, setOpen, setOpenWallet }) {
+
+    const scrollToSection = () => {
+        section.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
 
         <div className="relative min-h-screen flex flex-col bg-white">
@@ -21,22 +27,17 @@ export default function () {
 
                 <div data-aos="zoom-in" className='flex justify-center items-center my-2 gap-1'>
                     <CreateButton text="Angpao Digital" onClick={(val) => {
-
+                        setOpenWallet(true)
                     }} />
                     <CreateButton text="Galeri Pernikahan" onClick={(val) => {
-
+                        setOpen(true)
                     }} />
                 </div>
                 <div data-aos="zoom-in" className='flex justify-center items-center'>
                     <CreateButton text="Kisah Perjalanan Cinta" onClick={(val) => {
-
+                        scrollToSection();
                     }} />
 
-                </div>
-                <div data-aos="zoom-in" className='flex justify-center items-center mt-2'>
-                    <CreateButton text="Wedding Filter" onClick={(val) => {
-
-                    }} />
                 </div>
 
                 <div className='mt-28' >
