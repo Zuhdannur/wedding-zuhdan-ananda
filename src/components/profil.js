@@ -5,16 +5,37 @@
 import TopLeft from '../assets/images/img-profile-top-left.svg'
 import TopRight from '../assets/images/img-profile-top-right.svg'
 import Bismillah from '../assets/images/asset-bismillah.svg'
-import ImgPhotoArea from '../assets/images/Photo-Area.svg'
 import IconInstagram from '../assets/images/icon_instagram.svg'
 import Separtor from '../assets/images/Separator.svg'
 import BottomBackground from '../assets/images/img-profil-bottom.svg'
+import TopFlowers from '../assets/images/top_profile.png'
+import Person1 from '../assets/images/person1.jpg'
+import Person2 from '../assets/images/Person2.jpg'
 
 
-function PhotoArea({ nama, gender, father, mother, instagram, instagram_url }) {
+function PhotoArea({ nama, gender, father, mother, instagram, instagram_url, image }) {
     return (
-        <div data-aos="zoom-in" className='text-center flex flex-col justify-center px-5'>
-            <img src={ImgPhotoArea} alt='Photo Area' className='px-16' />
+        <div data-aos="zoom-in" className='relative text-center flex flex-col justify-center px-5'>
+            <div className='relative h-[450px] flex justify-center items-center'>
+                <div className="absolute top-0 w-full flex justify-center z-40">
+                    <img src={TopFlowers} alt="background" className="w-1/2 h-auto object-cover rotate-180" />
+                </div>
+
+                <div className='h-5/6 w-3/4 border-[2px] border-primary rounded-full z-30 bg-[#EAD5ED] bg-cover bg-center ' style={{
+                    backgroundImage: `url(${image})`
+                }}>
+                    {/* <img src={Person1} className='w-full object-cover h-auto' alt='person 1' /> */}
+                </div>
+
+                <div className="absolute bottom-0 w-full flex justify-center z-40">
+                    <img src={TopFlowers} alt="background" className="w-1/2 h-auto object-cover " />
+                </div>
+            </div>
+
+
+            {/* <img src={ImgPhotoArea} alt='Photo Area' className='px-16' /> */}
+
+
             <p className='text-[36px] text-primary font-bold'>{nama}</p>
             <span className='font-second text-[14px] font-medium mt-2'>{gender} Kedua dari <br />Bapak {father} dan <br /> {mother}</span>
             <div className='flex justify-center mt-3'>
@@ -48,16 +69,16 @@ export default function () {
             </div>
 
             {/* Centered Logo and Name */}
-            <div className="relative z-40 flex flex-col items-center justify-center top-16 animate-fadeInDown">
+            <div className="relative z-40 flex flex-col items-center justify-center top-24 animate-fadeInDown">
                 <img data-aos="zoom-out-up" src={Bismillah} alt="bismillah" className="mb-4" />
                 <span data-aos="zoom-out-down" className='px-5 text-center font-second text-xs text-[#303341]'>Maha Suci Allah yang telah menciptakan yang telah menciptakan makhluknya berpasang-pasangan.
                     Ya Allah perkenankanlah pernikahan putra-putri kami:</span>
             </div>
 
-            <div className='relative z-40 flex flex-col items-center justify-center top-28 animate-fadeInDown '>
-                <PhotoArea nama="Ananda Karina Muslimah, S.Pd." gender="Putri" father="Asep Rochman" mother="Aya Sofia Turan Bey" instagram="anandakrnm_" instagram_url="https://www.instagram.com/anandakrnm_/" />
+            <div className='relative z-40 flex flex-col items-center justify-center top-28 animate-fadeInDown my-10'>
+                <PhotoArea nama="Ananda Karina Muslimah, S.Pd." gender="Putri" father="Asep Rochman" image={Person1} mother="Aya Sofia Turan Bey" instagram="anandakrnm_" instagram_url="https://www.instagram.com/anandakrnm_/" />
                 <img src={Separtor} alt='Sepaartor' className='w-full mt-6 mb-10' />
-                <PhotoArea nama="Zuhdan Nur Ihsan Iskandar S.Kom." gender="Putra" father="Rachmat Iskandar" mother="Sri Dinursanti" instagram="zuhdan_nur" instagram_url="https://www.instagram.com/zuhdan_nur/" />
+                <PhotoArea nama="Zuhdan Nur Ihsan Iskandar S.Kom." gender="Putra" father="Rachmat Iskandar" image={Person2} mother="Sri Dinursanti" instagram="zuhdan_nur" instagram_url="https://www.instagram.com/zuhdan_nur/" />
             </div>
 
             <img src={BottomBackground} className='w-full mt-[150px]' alt='background' />

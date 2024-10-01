@@ -41,7 +41,7 @@ export default function ({ section }) {
 
 
 
-            <div className='bottom-0 z-0 w-full'>
+            <div className='bottom-0 z-0 w-full mt-[120px]'>
                 <div className="flex justify-between">
                     <img src={OurStoryImg2} alt="background" className="w-full h-auto object-cover" />
                     <img src={OurStoryImg3} alt="background" className="w-full h-auto object-cover" />
