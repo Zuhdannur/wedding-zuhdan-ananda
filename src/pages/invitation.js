@@ -30,13 +30,13 @@ export default function () {
 
 
     const playPauseMusic = () => {
-        // if (isPlaying) {
-        //     audioRef.current.pause();
-        //     setIsPlaying(false);
-        // } else {
-        //     audioRef.current.play();
-        //     setIsPlaying(true);
-        // }
+        if (isPlaying) {
+            audioRef.current.pause();
+            setIsPlaying(false);
+        } else {
+            audioRef.current.play();
+            setIsPlaying(true);
+        }
     };
 
     return (
