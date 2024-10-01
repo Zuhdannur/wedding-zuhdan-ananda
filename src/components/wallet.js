@@ -1,14 +1,24 @@
 'use client'
 
 import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react'
-import Jago from '../assets/images/jago.jpg'
+import Jago from '../assets/images/logo_jago.png'
 import Clip from '../assets/images/clip.svg'
+import Muamalat from '../assets/images/logo_muamalat.png'
+import { useState } from 'react'
 
 export default function Wallet({ open, setOpen }) {
+
+    const [sucess, setSuccess] = useState(false)
 
     const copyText = async (text) => {
         try {
             await navigator.clipboard.writeText(text);
+            setSuccess(true)
+
+            setTimeout(() => {
+                setSuccess(false)
+            }, 1000)
+
         } catch (err) {
         }
     };
@@ -34,8 +44,20 @@ export default function Wallet({ open, setOpen }) {
                                     </div>
                                     <div className='flex gap-2'>
                                         <p className='font-second mt-2 text-xs'>Bank Jago 5076 4855 9283 <br /> A.n Zuhdan Nur Ihsan Iskandar   </p>
-                                        <img onClick={copyText('507648559283')} src={Clip} alt='clip' className='w-[16px]' />
+                                        <img onClick={() => copyText('507648559283')} src={Clip} alt='clip' className='w-[16px]' />
                                     </div>
+
+                                    <div className="w-full flex justify-center mt-10">
+                                        <img src={Muamalat} alt="jago" className="w-[100px] h-auto" />
+                                    </div>
+                                    <div className='flex gap-2 mt-2'>
+                                        <p className='font-second mt-2 text-xs'>Bank Muamalat 1120 0056 37 <br /> A.n Ananda Karina Muslimah  </p>
+                                        <img onClick={() => copyText('1120005637')} src={Clip} alt='clip' className='w-[16px]' />
+                                    </div>
+
+                                    {sucess && <p className='mt-5 font-second text-xs'>
+                                        successfully copied
+                                    </p>}
 
                                 </div>
                             </div>

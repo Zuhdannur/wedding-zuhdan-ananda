@@ -1,6 +1,13 @@
 'use client'
 
-import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
+import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react'
+
+import Img01 from '../assets/images/gallery/01.jpg'
+import Img02 from '../assets/images/gallery/02.jpg'
+import Img03 from '../assets/images/gallery/03.jpg'
+import Img04 from '../assets/images/gallery/04.jpg'
+import Img05 from '../assets/images/gallery/05.jpg'
+import Img06 from '../assets/images/gallery/06.jpg'
 
 export default function Example({ open, setOpen }) {
 
@@ -19,11 +26,32 @@ export default function Example({ open, setOpen }) {
                     >
                         <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 w-screen">
                             <div className="sm:flex sm:items-start">
-                                <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                                    <DialogTitle as="h3" className="text-base font-semibold leading-6 text-gray-900 font-second">
-                                        Galeri Pernikahan
-                                    </DialogTitle>
-                                    <div className="mt-2">
+                                <div className="mt-3 text-center sm:text-center">
+                                    <div className="mt-2 ">
+                                        <div class="grid grid-cols-2 gap-4 w-5/6 items-center mx-4">
+                                            <div class="grid gap-4">
+                                                <div>
+                                                    <img class="h-auto max-w-full rounded-lg" src={Img01} alt="" />
+                                                </div>
+                                                <div>
+                                                    <img class="h-auto max-w-full rounded-lg" src={Img02} alt="" />
+                                                </div>
+                                                <div>
+                                                    <img class="h-auto max-w-full rounded-lg" src={Img03} alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="grid gap-4">
+                                                <div>
+                                                    <img class="h-auto max-w-full rounded-lg" src={Img04} alt="" />
+                                                </div>
+                                                <div>
+                                                    <img class="h-auto max-w-full rounded-lg" src={Img05} alt="" />
+                                                </div>
+                                                <div>
+                                                    <img class="h-auto max-w-full rounded-lg" src={Img06} alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
