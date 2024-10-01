@@ -36,7 +36,7 @@ export default function Wallet({ open, setOpen }) {
                         transition
                         className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl border-[2px] border-primary transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
                     >
-                        <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 w-screen">
+                        <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 w-full max-w-md sm:w-screen ">
                             <div className="mt-3 text-center">
                                 <div className="mt-2 flex flex-col items-center w-full">
                                     <div className="w-full flex justify-center">
