@@ -10,7 +10,7 @@ import Separtor from '../assets/images/Separator.svg'
 import BottomBackground from '../assets/images/img-profil-bottom.svg'
 import TopFlowers from '../assets/images/top_profile.png'
 import Person1 from '../assets/images/person1.jpg'
-import Person2 from '../assets/images/Person2.jpg'
+import Person2 from '../assets/images/person2.jpg'
 
 
 function PhotoArea({ nama, gender, father, mother, instagram, instagram_url, image }) {
@@ -21,7 +21,7 @@ function PhotoArea({ nama, gender, father, mother, instagram, instagram_url, ima
                     <img src={TopFlowers} alt="background" className="w-1/2 h-auto object-cover rotate-180" />
                 </div>
 
-                <div className='h-5/6 w-3/4 border-[2px] border-primary rounded-full z-30 bg-[#EAD5ED] bg-cover bg-center ' style={{
+                <div className='h-5/6 w-3/4 border-[2px] border-primary rounded-full z-30 bg-[#EAD5ED] bg-cover  bg-center ' style={{
                     backgroundImage: `url(${image})`
                 }}>
                     {/* <img src={Person1} className='w-full object-cover h-auto' alt='person 1' /> */}
@@ -76,9 +76,9 @@ export default function () {
             </div>
 
             <div className='relative z-40 flex flex-col items-center justify-center top-28 animate-fadeInDown my-10'>
-                <PhotoArea nama="Ananda Karina Muslimah, S.Pd." gender="Putri" father="Asep Rochman" image={Person1} mother="Aya Sofia Turan Bey" instagram="anandakrnm_" instagram_url="https://www.instagram.com/anandakrnm_/" />
+                <PhotoArea nama="Ananda Karina Muslimah, S.Pd." gender="Putri" father="Asep Rochman" image={Person2} mother="Aya Sofia Turan Bey" instagram="anandakrnm_" instagram_url="https://www.instagram.com/anandakrnm_/" />
                 <img src={Separtor} alt='Sepaartor' className='w-full mt-6 mb-10' />
-                <PhotoArea nama="Zuhdan Nur Ihsan Iskandar S.Kom." gender="Putra" father="Rachmat Iskandar" image={Person2} mother="Sri Dinursanti" instagram="zuhdan_nur" instagram_url="https://www.instagram.com/zuhdan_nur/" />
+                <PhotoArea nama="Zuhdan Nur Ihsan Iskandar S.Kom." gender="Putra" father="Rachmat Iskandar" image={Person1} mother="Sri Dinursanti" instagram="zuhdan_nur" instagram_url="https://www.instagram.com/zuhdan_nur/" />
             </div>
 
             <img src={BottomBackground} className='w-full mt-[150px]' alt='background' />

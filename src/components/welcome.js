@@ -52,7 +52,7 @@ export default function ({ open }) {
             <div className="relative z-40 flex flex-col items-center justify-center bottom-28 rounded-[24px] backdrop-blur-2xl mx-5 px-3 py-5 animate-fadeInUp">
                 {!error && <>
                     <p className='font-second mb-2 text-[#303341]'>Kepada Bapak/Ibu/Saudara/i</p>
-                    <h2 className='text-[28px] text-pink'>{name}</h2>
+                    <h2 className='text-[28px] text-pink text-center'>{name}</h2>
                     <span className="text-sm text-center text-black my-5 font-second">Tanpa Mengurangi Rasa Hormat,Turut Mengundang untuk Dapat Hadir di Acara Pernikahan Kami.</span>
                 </>}
 
