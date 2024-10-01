@@ -9,8 +9,8 @@ import IconInstagram from '../assets/images/icon_instagram.svg'
 import Separtor from '../assets/images/Separator.svg'
 import BottomBackground from '../assets/images/img-profil-bottom.svg'
 import TopFlowers from '../assets/images/top_profile.png'
-import Person1 from '../assets/images/person1.jpg'
-import Person2 from '../assets/images/person2.jpg'
+import Person1 from '../assets/images/person-man.jpg'
+import Person2 from '../assets/images/person-woman.jpg'
 
 
 function PhotoArea({ nama, gender, father, mother, instagram, instagram_url, image }) {
