@@ -30,13 +30,13 @@ export default function () {
 
 
     const playPauseMusic = () => {
-        // if (isPlaying) {
-        //     audioRef.current.pause();
-        //     setIsPlaying(false);
-        // } else {
-        //     audioRef.current.play();
-        //     setIsPlaying(true);
-        // }
+        if (isPlaying) {
+            audioRef.current.pause();
+            setIsPlaying(false);
+        } else {
+            audioRef.current.play();
+            setIsPlaying(true);
+        }
     };
 
     return (
@@ -56,11 +56,8 @@ export default function () {
             <Prayers />
             <Thanks section={sectionStoryRef} setOpen={setOpen} setOpenWallet={setOpenWallet} />
             <Footer />
-
-
             <Gallery open={open} setOpen={setOpen} />
             <Wallet open={openWallet} setOpen={setOpenWallet} />
-
 
         </div>
     )

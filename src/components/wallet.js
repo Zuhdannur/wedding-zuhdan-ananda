@@ -1,8 +1,17 @@
 'use client'
 
-import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
+import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react'
+import Jago from '../assets/images/jago.jpg'
+import Clip from '../assets/images/clip.svg'
 
 export default function Wallet({ open, setOpen }) {
+
+    const copyText = async (text) => {
+        try {
+            await navigator.clipboard.writeText(text);
+        } catch (err) {
+        }
+    };
 
     return (
         <Dialog open={open} onClose={setOpen} className="relative z-[9999999]">
@@ -18,17 +27,16 @@ export default function Wallet({ open, setOpen }) {
                         className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl border-[2px] border-primary transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
                     >
                         <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 w-screen">
-                            <div className="sm:flex sm:items-start">
-                                <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                                    <div className="mt-2">
-                                        <p>this is showing</p>
-                                        <p>this is showing</p>
-                                        <p>this is showing</p>
-                                        <p>this is showing</p>
-                                        <p>this is showing</p>
-                                        <p>this is showing</p>
-                                        <p>this is showing</p>
+                            <div className="mt-3 text-center">
+                                <div className="mt-2 flex flex-col items-center w-full">
+                                    <div className="w-full flex justify-center">
+                                        <img src={Jago} alt="jago" className="w-[100px] h-auto" />
                                     </div>
+                                    <div className='flex gap-2'>
+                                        <p className='font-second mt-2 text-xs'>Bank Jago 5076 4855 9283 <br /> A.n Zuhdan Nur Ihsan Iskandar   </p>
+                                        <img onClick={copyText('507648559283')} src={Clip} alt='clip' className='w-[16px]' />
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
