@@ -24,7 +24,20 @@ export default function Example({ open, setOpen }) {
                         transition
                         className="relative transform overflow-x-hidden rounded-lg bg-white text-left shadow-xl border-[2px] border-primary transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
                     >
-                        <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 w-full max-w-md ">
+                        <div className="bg-gray-50 px-4 py-3 sm:px-6 flex justify-end">
+                            <button
+                                type="button"
+                                data-autofocus
+                                onClick={() => setOpen(false)}
+                                className="mt-3 w-[50px] inline-flex justify-center px-3 py-2 text-sm text-black font-second font-semibold text-gray-900 ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto "
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div className="bg-white px-4 pb-4 w-full max-w-md ">
                             <div className="sm:flex sm:items-start">
                                 <div className="mt-3 text-center sm:text-center">
                                     <div className="mt-2 ">
@@ -57,16 +70,7 @@ export default function Example({ open, setOpen }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                            <button
-                                type="button"
-                                data-autofocus
-                                onClick={() => setOpen(false)}
-                                className="mt-3 inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 text-sm text-white font-second font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto "
-                            >
-                                Tutup
-                            </button>
-                        </div>
+
                     </DialogPanel>
                 </div>
             </div>

@@ -36,7 +36,7 @@ export default function ({ section }) {
                 <StorySection title="2015" description="Di sebuah ruang kelas 9E di SMPN 25, dua jiwa dipertemukan. Saat itu, kebersamaan terjalin dalam kesederhanaan, hanya sepasang teman yang saling berbagi cerita tanpa banyak harap. Namun, waktu berlalu, dan jarak memisahkan langkah kami tanpa isyarat" />
                 <StorySection title="2019" description="Seiring waktu yang berjalan, komunikasi yang sempat terputus kembali terajut. Percakapan demi percakapan membawa kenangan lama kembali hidup, seolah takdir memberi kesempatan kedua. Dalam canda dan tawa yang sempat hilang, perasaan yang dulu samar kini mulai menemukan bentuknya." />
                 <StorySection title="2021" description="Di tahun ini, kami tak lagi sekadar berbicara. Sebuah komitmen terucap, bukan hanya untuk saling menjaga, tetapi untuk menempuh perjalanan menuju cinta yang lebih serius. Kami berjanji untuk tumbuh bersama, mengatasi badai dan menyulam mimpi, dengan keyakinan bahwa setiap langkah membawa kami lebih dekat pada masa depan yang dirajut berdua." />
-                <StorySection title="Finally" description="Akhirnya kita bersama didalam pernikahan yang sakral, semoga allah swt meridoi pernikahan kita" withTimeLine={false} />
+                <StorySection title="Finally" description="Akhirnya kita bersama didalam pernikahan yang sakral, semoga Allah SWT meridoi pernikahan kita" withTimeLine={false} />
             </div>
 
 

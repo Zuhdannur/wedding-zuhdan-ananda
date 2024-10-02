@@ -57,7 +57,7 @@ function ShowModal({ open, setOpen }) {
 function CardItem({ title, name }) {
     return (
         <div className='py-3 px-3 border-b-[1px] border-b-[#7B4C8233] flex flex-col items-center text-center'>
-            <span className='font-second text-xs'>Semoga menjadi keluarga sakinah mawadah warahmah...aamiin...</span>
+            <span className='font-second text-xs'>{title}</span>
             <div className='bg-[#7B4C8233] w-[56px] h-[1px] mt-3' />
             <p className='text-primary font-second text-xs mt-1'>
                 {name}
@@ -68,9 +68,11 @@ function CardItem({ title, name }) {
 function DataTables() {
     return (
         <div className='bg-white rounded-lg border-[1px] border-[#7B4C8233] h-100 w-4/6'>
-            <CardItem title="Semoga menjadi keluarga sakinah mawadah warahmah...aamiin..." name="H. Rudi Gunawan & Hj Rina Maelina" />
-            <CardItem title="Semoga menjadi keluarga sakinah mawadah warahmah...aamiin..." name="Ridwan" />
-            <CardItem title="Semoga menjadi keluarga sakinah mawadah warahmah...aamiin..." name="Ridwan" />
+            <CardItem title="Selamat menikah! Semoga Allah selalu memberikan keberkahan dalam rumah tanggamu." name="Unkown" />
+            <CardItem title="Semoga rumah tanggamu penuh berkah." name="Unkown" />
+            <CardItem title="Barakallahu lakuma wa baraka ‘alaikuma wa jama’a bainakuma fi khair." name="Unkown" />
+            <CardItem title="Selamat berbahagia! Semoga pernikahan kalian menjadi awal dari keluarga yang sakinah, mawaddah, warahmah. Semoga kalian selalu diberikan kesehatan, rezeki yang halal, dan keturunan yang sholeh dan sholehah. Aamiin." name="Unkown" />
+            <CardItem title="Barakallahu lakuma! Selamat menempuh hidup baru." name="Unkown" />
             <div className='py-2 px-3 border-b-[1px] border-b-[#7B4C8233] flex justify-between items-center text-center'>
                 <p className='font-second text-primary text-xs'>sebelumnya</p>
                 <p className='font-second text-primary text-xs'>Selanjutnya</p>
@@ -99,10 +101,10 @@ export default function () {
 
                 <div className="relative z-30 flex flex-col items-center justify-center  animate-fadeInDown rounded-full mx-5">
                     <h1 className="text-[28px] font-semibold text-primary tracking-wide">Ucapan dan Do’a</h1>
-                    <span className='px-5 text-center font-second text-xs text-[#303341] mt-1'>Kirim ucapan dan do’a untuk kedua mempelai:</span>
-                    <button onClick={() => setOpen(true)} className='bg-primary py-2 px-8 text-white rounded-full mb-5 font-second mt-3 hover:bg-white hover:text-primary '>
+                    <span className='px-5 text-center font-second text-xs text-[#303341] mt-1'>Do’a untuk kedua mempelai:</span>
+                    {/* <button onClick={() => setOpen(true)} className='bg-primary py-2 px-8 text-white rounded-full mb-5 font-second mt-3 hover:bg-white hover:text-primary '>
                         Kirim Ucapan
-                    </button>
+                    </button> */}
                 </div>
 
                 <div className='relative z-[99999] flex flex-col items-center justify-center top-10 animate-fadeInDown'>
