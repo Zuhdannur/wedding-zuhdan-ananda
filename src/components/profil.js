@@ -2,12 +2,13 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
-import TopLeft from '../assets/images/img-profile-top-left.svg'
-import TopRight from '../assets/images/img-profile-top-right.svg'
+// import { ReactComponent as TopLeft } from '../assets/images/img-profile-top-left.svg'
+import TopLeft from '../assets/images/mmm.png'
+import TopRight from '../assets/images/03.png'
 import Bismillah from '../assets/images/asset-bismillah.svg'
 import IconInstagram from '../assets/images/icon_instagram.svg'
 import Separtor from '../assets/images/Separator.svg'
-import BottomBackground from '../assets/images/img-profil-bottom.svg'
+import BottomBackground from '../assets/images/04.png'
 import TopFlowers from '../assets/images/top_profile.png'
 import Person1 from '../assets/images/person-man.jpg'
 import Person2 from '../assets/images/person-woman.jpg'
@@ -63,8 +64,9 @@ export default function () {
             {/* Top Background Image */}
             <div className="absolute top-0 w-full h-full z-0">
                 <div className="flex justify-between">
-                    <img src={TopLeft} alt="background" className="w-full h-auto object-cover" />
-                    <img src={TopRight} alt="background" className="w-full h-auto object-cover" />
+                    {/* <TopLeft className='w-full h-auto object-cover border-none' /> */}
+                    <img src={TopLeft} alt="background" className="w-full h-auto object-cover border-none" />
+                    <img src={TopRight} alt="background" className="w-full h-auto object-cover border-none" />
                 </div>
             </div>
 

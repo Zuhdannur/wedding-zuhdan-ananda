@@ -1,8 +1,8 @@
-import bgTop from '../assets/images/bg-top-01.svg'
+import bgTop from '../assets/images/05.png'
 import OurStoryImg1 from '../assets/images/img-our-story-1.svg'
 import Connector from '../assets/images/Connector.svg'
-import OurStoryImg2 from '../assets/images/img-our-story-bottom-1.svg'
-import OurStoryImg3 from '../assets/images/img-our-story-bottom-2.svg'
+import OurStoryImg2 from '../assets/images/00.png'
+import OurStoryImg3 from '../assets/images/02.png'
 
 function StorySection({ title, description, withTimeLine = true }) {
     return (
@@ -43,8 +43,8 @@ export default function ({ section }) {
 
             <div className='bottom-0 z-0 w-full mt-[120px]'>
                 <div className="flex justify-between">
-                    <img src={OurStoryImg2} alt="background" className="w-full h-auto object-cover" />
-                    <img src={OurStoryImg3} alt="background" className="w-full h-auto object-cover" />
+                    <img src={OurStoryImg2} alt="background" className="w-full h-auto object-cover border-none" />
+                    <img src={OurStoryImg3} alt="background" className="w-full h-auto object-cover border-none" />
                 </div>
             </div>
         </div>

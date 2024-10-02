@@ -54,6 +54,7 @@ export default function Example({ open, setOpen }) {
                                                 </div>
                                             </div>
                                             <div class="grid gap-4">
+
                                                 <div>
                                                     <img class="h-auto max-w-full rounded-lg" src={Img04} alt="" />
                                                 </div>
