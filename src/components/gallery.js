@@ -8,6 +8,8 @@ import Img03 from '../assets/images/gallery/03.jpg'
 import Img04 from '../assets/images/gallery/04.jpg'
 import Img05 from '../assets/images/gallery/05.jpg'
 import Img06 from '../assets/images/gallery/06.jpg'
+import Img07 from '../assets/images/gallery/07.jpg'
+import Img08 from '../assets/images/gallery/08.jpg'
 
 export default function Example({ open, setOpen }) {
 
@@ -55,6 +57,9 @@ export default function Example({ open, setOpen }) {
                                             </div>
                                             <div class="grid gap-4">
                                                 <div>
+                                                    <img class="h-auto max-w-full rounded-lg" src={Img07} alt="" />
+                                                </div>
+                                                <div>
                                                     <img class="h-auto max-w-full rounded-lg" src={Img04} alt="" />
                                                 </div>
                                                 <div>
@@ -62,6 +67,9 @@ export default function Example({ open, setOpen }) {
                                                 </div>
                                                 <div>
                                                     <img class="h-auto max-w-full rounded-lg" src={Img06} alt="" />
+                                                </div>
+                                                <div>
+                                                    <img class="h-auto max-w-full rounded-lg" src={Img08} alt="" />
                                                 </div>
                                             </div>
                                         </div>
