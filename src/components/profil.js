@@ -38,7 +38,7 @@ function PhotoArea({ nama, gender, father, mother, instagram, instagram_url, ima
 
 
             <p className='text-[36px] text-primary font-bold'>{nama}</p>
-            <span className='font-second text-[14px] font-medium mt-2'>{gender} Kedua dari <br />Bapak {father} dan <br /> {mother}</span>
+            <span className='font-second text-[14px] font-medium mt-2'>{gender} Kedua dari <br />Bapak {father} dan <br /> Ibu {mother}</span>
             <div className='flex justify-center mt-3'>
 
                 <a

@@ -68,15 +68,15 @@ function CardItem({ title, name }) {
 function DataTables() {
     return (
         <div className='bg-white rounded-lg border-[1px] border-[#7B4C8233] h-100 w-4/6'>
-            <CardItem title="Selamat menikah! Semoga Allah selalu memberikan keberkahan dalam rumah tanggamu." name="Unkown" />
-            <CardItem title="Semoga rumah tanggamu penuh berkah." name="Unkown" />
-            <CardItem title="Barakallahu lakuma wa baraka ‘alaikuma wa jama’a bainakuma fi khair." name="Unkown" />
-            <CardItem title="Selamat berbahagia! Semoga pernikahan kalian menjadi awal dari keluarga yang sakinah, mawaddah, warahmah. Semoga kalian selalu diberikan kesehatan, rezeki yang halal, dan keturunan yang sholeh dan sholehah. Aamiin." name="Unkown" />
-            <CardItem title="Barakallahu lakuma! Selamat menempuh hidup baru." name="Unkown" />
-            <div className='py-2 px-3 border-b-[1px] border-b-[#7B4C8233] flex justify-between items-center text-center'>
+            <CardItem title="Selamat menikah! Semoga Allah selalu memberikan keberkahan dalam rumah tanggamu." name="Hamba Allah" />
+            <CardItem title="Semoga rumah tanggamu penuh berkah." name="Hamba Allah" />
+            <CardItem title="Barakallahu lakuma wa baraka ‘alaikuma wa jama’a bainakuma fi khair." name="Hamba Allah" />
+            <CardItem title="Selamat berbahagia! Semoga pernikahan kalian menjadi awal dari keluarga yang sakinah, mawaddah, warahmah. Semoga kalian selalu diberikan kesehatan, rezeki yang halal, dan keturunan yang sholeh dan sholehah. Aamiin." name="Hamba Allah" />
+            <CardItem title="Barakallahu lakuma! Selamat menempuh hidup baru." name="Hamba Allah" />
+            {/* <div className='py-2 px-3 border-b-[1px] border-b-[#7B4C8233] flex justify-between items-center text-center'>
                 <p className='font-second text-primary text-xs'>sebelumnya</p>
                 <p className='font-second text-primary text-xs'>Selanjutnya</p>
-            </div>
+            </div> */}
 
         </div>
     )
