@@ -19,7 +19,7 @@ function ShowModal({ open, setOpen }) {
                 <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
                     <DialogPanel
                         transition
-                        className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl border-[2px] border-primary transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+                        className="relative transform overflow-hidden rounded-lg bg-white dark:bg-white text-left shadow-xl border-[2px] border-primary transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
                     >
                         <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 w-screen ">
                             <div className="mt-3 text-center">
@@ -42,7 +42,7 @@ function ShowModal({ open, setOpen }) {
                                 type="button"
                                 data-autofocus
                                 onClick={() => setOpen(false)}
-                                className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm text-primary border-[1px]  border-primary font-second font-semibold text-gray-900 shadow-sm  hover:bg-gray-50 sm:mt-0 sm:w-auto "
+                                className="mt-3 inline-flex w-full justify-center rounded-md bg-white dark:bg-white px-3 py-2 text-sm text-primary border-[1px]  border-primary font-second font-semibold text-gray-900 shadow-sm  hover:bg-gray-50 sm:mt-0 sm:w-auto "
                             >
                                 Simpan
                             </button>

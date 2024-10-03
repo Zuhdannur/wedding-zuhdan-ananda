@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 function BoxTime({ time, title }) {
     return (
-        <div data-aos="zoom-in" className="rounded-[16px] w-[80px] px-6 py-4 bg-opacity-80 flex flex-col justify-start items-center text-white bg-white">
+        <div data-aos="zoom-in" className="rounded-[16px] w-[80px] px-6 py-4 bg-opacity-80 flex flex-col justify-start items-center text-white bg-white  dark:bg-white">
             <p className="text-[28px] font-semibold text-primary">{time}</p>
             <span className="text-xs text-primary font-second text-opacity-80">{title}</span>
         </div>

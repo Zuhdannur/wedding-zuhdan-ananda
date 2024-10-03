@@ -22,7 +22,7 @@ export default function Example({ open, setOpen }) {
                 <div className="flex items-end justify-center p-4 text-center sm:items-center sm:p-0 ">
                     <DialogPanel
                         transition
-                        className="relative transform overflow-x-hidden rounded-lg bg-white text-left shadow-xl border-[2px] border-primary transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+                        className="relative transform overflow-x-hidden rounded-lg bg-white dark:bg-white text-left shadow-xl border-[2px] border-primary transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
                     >
                         <div className="bg-gray-50 px-4 py-3 sm:px-6 flex justify-end">
                             <button
@@ -37,7 +37,7 @@ export default function Example({ open, setOpen }) {
 
                             </button>
                         </div>
-                        <div className="bg-white px-4 pb-4 w-full max-w-md ">
+                        <div className="bg-white dark:bg-white px-4 pb-4 w-full max-w-md ">
                             <div className="sm:flex sm:items-start">
                                 <div className="mt-3 text-center sm:text-center">
                                     <div className="mt-2 ">
@@ -54,7 +54,6 @@ export default function Example({ open, setOpen }) {
                                                 </div>
                                             </div>
                                             <div class="grid gap-4">
-
                                                 <div>
                                                     <img class="h-auto max-w-full rounded-lg" src={Img04} alt="" />
                                                 </div>

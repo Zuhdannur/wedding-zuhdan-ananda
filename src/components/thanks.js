@@ -20,7 +20,7 @@ export default function ({ section, setOpen, setOpenWallet }) {
 
     return (
 
-        <div className="relative min-h-screen flex flex-col bg-white">
+        <div className="relative min-h-screen flex flex-col bg-white dark:bg-white">
             <div className="bg-white relative z-30 flex flex-col items-center justify-center  animate-fadeInDown rounded-full min-h-screen mx-5">
                 <h1 data-aos="zoom-in" className="text-[28px] font-semibold text-primary tracking-wide">Tanda Kasih</h1>
                 <span data-aos="zoom-in" className='px-5 text-center font-second text-xs text-[#303341]'>Terima kasih telah menambah semangat kegembiraan pernikahan kami dengan kehadiran dan hadiah indah Anda.</span>
